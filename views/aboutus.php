@@ -1,3 +1,13 @@
+<?php
+$current_page = $_SERVER['PHP_SELF'];
+if (strpos($current_page, 'homepage.php') !== false) {
+  // If the current page is homepage.php, link back to the homepage
+  $back_link = 'homepage.php';
+} else {
+  // Otherwise, link back to the index page
+  $back_link = '../index.php';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +28,6 @@
     elements found on most websites, allowing clients to find vacant
     rooms and to check its specification and information.
     </p>
-    <a href="homepage.php" class="text-info font-weight-bold">Back</a>
+    <a href="<?php echo $back_link; ?>">Back</a>
 </body>
 </html>
