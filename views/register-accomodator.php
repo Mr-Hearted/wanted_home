@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+	<style>
+    body {
+      background-image: url("../images/bg-image.jpg");
+      background-size: cover;
+    }
+  	</style>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -73,24 +79,7 @@
     </div>
   </div>
 </section>
-
-<footer class="footer fixed-bottom py-3 bg-light">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="#">
-          <i class="fab fa-facebook fa-sm mx-3"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-twitter fa-sm mx-3"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-instagram fa-sm mx-3"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
+<footer></footer>
 
 <!-- Bootstrap JS and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
