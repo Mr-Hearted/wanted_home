@@ -18,30 +18,36 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffc5a5;">
+
+<nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#">
-  	<img src="../images/home-logo.jpg" alt="Home Logo" class="img-fluid" style="width:80px; height:80px; margin:70px">
+    <img src="../images/home-logo.jpg" alt="Home Logo" class="img-thumbnail" style="width: 80px; height: 80px; margin-left: 30px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="contactus.php">Contact Us</a>
+        <a class="nav-link" href="#">
+          <i class="fas fa-phone-alt"></i> Contact Us
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="aboutus.php">About Us</a>
+        <a class="nav-link" href="#">
+          <i class="fas fa-info-circle"></i> About Us
+        </a>
       </li>
     </ul>
   </div>
 </nav>
+
 <section class="d-flex justify-content-center align-items-center" style="margin-top: 20px;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6 text-center">
       <h1>Welcome to Wanted Home</h1>
-        <p class="lead">Choose your role and find the perfect match for your housing needs. Whether you are an Accomodator looking for tenants or a Student searching for a home, Wanted Home is here to help you.</p>
+    <p class="lead">Choose your role and find the perfect match for your housing needs. Whether you are an Accomodator looking for tenants or a Student searching for a home, Wanted Home is here to help you.</p>
         <div class="btn-group" role="group">
           <a href="register-accomodator.php" class="btn btn-outline-info btn-lg mr-2">Accomodator</a>
           <a href="register-student.php" class="btn btn-outline-info btn-lg mr-2">Student</a>
