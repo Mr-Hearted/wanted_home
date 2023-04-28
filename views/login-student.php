@@ -39,24 +39,31 @@
     </ul>
   </div>
 </nav>
-<h2>Student Login</h2>
-	<form action="../php/login-student-process.php" method="post">
-		<div>
-			<label>Email:</label>
-			<input type="email" name="email" required>
-		</div>
-		<div>
-			<label>Password:</label>
-			<input type="password" name="password" required>
-		</div>
-		<div>
-			<input type="submit" value="Login">
-		</div>
-	</form>
-	<p><a href="forgot_pass_student.php">Forgot Password?</a></p>
-    <p>Do you have an account? <a href="register-student.php">Register</a></p>
-    <a href="login-user-choose.php" class="text-info font-weight-bold">Back</a>
-	
+<section class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2>Student Login</h2>
+        <form action="../php/login-student-process.php" method="post">
+          <div class="form-group">
+            <label for="email"><i class="bi bi-envelope-fill"></i> Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password"><i class="bi bi-lock-fill"></i> Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary"><i class="bi bi-box-arrow-in-right"></i> Login</button>
+          </div>
+        </form>
+        <p><a href="forgot_pass_student.php">Forgot Password?</a></p>
+        <p>Don't have an account? <a href="register-student.php">Register</a></p>
+        <a href="login-user-choose.php" class="text-info font-weight-bold"><i class="bi bi-arrow-left-square"></i> Back</a>
+      </div>
+    </div>
+  </div>
+</section>
 	<footer></footer>
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

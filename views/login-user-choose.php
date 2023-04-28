@@ -41,9 +41,23 @@
   </div>
 </nav>
 
-<a href="login-accom.php" class="text-info font-weight-bold">Accomodator</a>
-<a href="login-student.php" class="text-info font-weight-bold">Student</a>
-<a href="../index.php" class="text-info font-weight-bold">Back</a>
+<section class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <div class="container text-center">
+    <h2>Choose Your Login Type</h2>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6 mb-3">
+        <a href="login-accom.php" class="btn btn-info btn-lg btn-block"><i class="fas fa-building"></i> Accomodator</a>
+      </div>
+      <div class="col-md-6 mb-3">
+        <a href="login-student.php" class="btn btn-info btn-lg btn-block"><i class="fas fa-user-graduate"></i> Student</a>
+      </div>
+      <div class="col-md-12">
+        <a href="../index.php" class="btn btn-info btn-lg btn-block"><i class="fas fa-arrow-left"></i> Back</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <footer></footer>
 <!-- Bootstrap JS and jQuery -->
