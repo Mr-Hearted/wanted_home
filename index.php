@@ -26,8 +26,7 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="front-view">
-	<img src="images/bg-image.jpg" alt="">
-	</div>
+	<a href="#" class="text-info font-weight-bold">Create Account</a>
+	<a href="#" class="text-info font-weight-bold">Login</a>
 </body>
 </html>
