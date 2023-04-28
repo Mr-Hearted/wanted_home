@@ -18,10 +18,10 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link text-primary" href="views/login.php">Contact Us</a>
+					<a class="nav-link text-primary" href="views/contactus.php">Contact Us</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-primary" href="views/favorite.php"> About Us</a>
+					<a class="nav-link text-primary" href="views/aboutus.php"> About Us</a>
 				</li>
 			</ul>
 		</div>
