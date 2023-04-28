@@ -42,32 +42,39 @@
   </div>
 </nav>
 
-<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-8">
-            <h2>Student Registration Form</h2>
-	        <form action="../php/reg-student-process.php" method="POST">
-		        <label for="full_name">Full Name:</label><br>
-		        <input type="text" id="full_name" name="full_name" required><br><br>
-
-		        <label for="birthday">Birthday:</label><br>
-		        <input type="date" id="birthday" name="birthday" required><br><br>
-
-		        <label for="email">Email:</label><br>
-		        <input type="email" id="email" name="email" required><br><br>
-
-		        <label for="password">Password:</label><br>
-		        <input type="password" id="password" name="password" required><br><br>
-
-		        <label for="confirm_password">Confirm Password:</label><br>
-		        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-
-		        <input type="submit" value="Register">
-	        </form>
-                <a href="#" class="text-info font-weight-bold">Back</a>
-			</div>
-		</div>
-	</div>
+<section class="d-flex justify-content-center align-items-center" style="margin-top: 20px;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="mb-4">Student Registration Form</h2>
+        <form action="../php/reg-student-process.php" method="POST">
+          <div class="form-group">
+            <label for="full_name"><i class="fas fa-user"></i> Full Name:</label>
+            <input type="text" class="form-control" id="full_name" name="full_name" required>
+          </div>
+          <div class="form-group">
+            <label for="birthday"><i class="fas fa-calendar-alt"></i> Birthday:</label>
+            <input type="date" class="form-control" id="birthday" name="birthday" required>
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password"><i class="fas fa-lock"></i> Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm_password"><i class="fas fa-lock"></i> Confirm Password:</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+          </div>
+          <button type="submit" class="btn btn-info"><i class="fas fa-user-plus"></i> Register</button>
+        </form>
+        <a href="#" class="text-info font-weight-bold mt-2"><i class="fas fa-chevron-left"></i> Back</a>
+      </div>
+    </div>
+  </div>
+</section>
 	
 	<footer></footer>
 	<!-- Bootstrap JS and jQuery -->
