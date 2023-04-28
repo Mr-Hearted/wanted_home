@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $email_err = "Please enter email.";
     } else{
         // Prepare a select statement
-        $sql = "SELECT id FROM accommodators WHERE email = ?";
+        $sql = "SELECT id FROM students WHERE email = ?";
 
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -72,7 +72,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($email_err) && empty($password_err) && empty($confirm_password_err)){
 
         // Prepare an update statement
-        $sql = "UPDATE accommodators SET password = ? WHERE email = ?";
+        $sql = "UPDATE students SET password = ? WHERE email = ?";
 
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -85,7 +85,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Password updated successfully. Redirect to login page.
-                header("location: ../views/login-accom.php");
+                header("location: ../views/login-student.php");
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }

@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// If user is not logged in, redirect to login page
+if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
+    header("location: login-user-choose.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +18,6 @@
 </head>
 <body>
     <h1>Home Page</h1>
+    <a class="nav-link text-danger" href="../php/logout.php">Logout</a>
 </body>
 </html>

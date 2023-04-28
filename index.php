@@ -26,7 +26,7 @@
 			</ul>
 		</div>
 	</nav>
-	<a href="#" class="text-info font-weight-bold">Create Account</a>
-	<a href="#" class="text-info font-weight-bold">Login</a>
+	<a href="views/register-user-choose.php" class="text-info font-weight-bold">Create Account</a>
+	<a href="views/login-user-choose.php" class="text-info font-weight-bold">Login</a>
 </body>
 </html>

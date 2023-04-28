@@ -34,7 +34,7 @@
 	    // Validate credentials
 	    if(empty($email_err) && empty($password_err)){
 	        // Prepare a select statement
-	        $sql = "SELECT id, email, password FROM accommodators WHERE email = ?";
+	        $sql = "SELECT id, email, password FROM students WHERE email = ?";
 	        
 	        if($stmt = mysqli_prepare($conn, $sql)){
 	            // Bind variables to the prepared statement as parameters

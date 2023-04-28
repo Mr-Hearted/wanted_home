@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-<h2>Accommodator Login</h2>
-	<form action="../php/login-accom-process.php" method="post">
+<h2>Student Login</h2>
+	<form action="../php/login-student-process.php" method="post">
 		<div>
 			<label>Email:</label>
 			<input type="email" name="email" required>
@@ -21,8 +21,8 @@
 			<input type="submit" value="Login">
 		</div>
 	</form>
-	<p><a href="forgot_password.php">Forgot Password?</a></p>
-    <p>Do you have an account? <a href="register-accomodator.php">Register</a></p>
+	<p><a href="forgot_pass_student.php">Forgot Password?</a></p>
+    <p>Do you have an account? <a href="register-student.php">Register</a></p>
     <a href="login-user-choose.php" class="text-info font-weight-bold">Back</a>
 </body>
 </html>
