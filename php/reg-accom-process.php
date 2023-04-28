@@ -104,7 +104,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 
                 // Set parameters
                 $param_email = $email;
-                $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+                $param_password = $password // Creates a password hash
                 $param_contact_number = $contact_number;
                 $param_name = $name;
                 $param_business_name = $business_name;

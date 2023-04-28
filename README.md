@@ -8,3 +8,11 @@ CREATE TABLE accommodators (
     business_name VARCHAR(255) NOT NULL,
     address VARCHAR(255) NOT NULL
 );
+
+CREATE TABLE students (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(255) NOT NULL,
+  birthday DATE NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
