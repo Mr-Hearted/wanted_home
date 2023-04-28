@@ -115,7 +115,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     // Redirect to login page
                     header("location: ../views/login-accom.php");
                 } else{
-                    echo "Oops! Something went wrong. Please try again later.";
+                    echo "<p>Oops! Something went wrong. Please try again later.</p>";
                 }
 
                 // Close statement

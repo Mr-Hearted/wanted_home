@@ -27,13 +27,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="register-accomodator.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" href="contactus.php">Contact Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="aboutus.php">About Us</a>
       </li>
     </ul>
   </div>
@@ -46,35 +46,35 @@
         <form action="../php/reg-accom-process.php" method="POST">
           <div class="form-group">
             <label for="email">Enter your email address here: </label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
           </div>
           <div class="form-group">
             <label for="password">Enter your password here: </label>
-            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
           </div>
           <div class="form-group">
             <label for="confirm_password">Confirm Password:</label>
-            <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+            <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
           </div>
           <div class="form-group">
             <label for="contact_number">Contact no.</label>
-            <input type="tel" class="form-control" name="contact_number" id="contact_number" placeholder="Enter your contact number">
+            <input type="tel" class="form-control" name="contact_number" id="contact_number" placeholder="Enter your contact number" required>
           </div>
           <div class="form-group">
             <label for="name">Business Info:</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
           </div>
           <div class="form-group">
             <label for="business_name">Business Name:</label>
-            <input type="text" class="form-control" name="business_name" id="business_name" placeholder="Business name">
+            <input type="text" class="form-control" name="business_name" id="business_name" placeholder="Business name" required>
           </div>
           <div class="form-group">
             <label for="address">Location: </label>
-            <input type="text" class="form-control" name="address" id="address" placeholder="Address">
+            <input type="text" class="form-control" name="address" id="address" placeholder="Address" required>
           </div>
           <button type="submit" class="btn btn-primary">Register</button>
         </form>
-        <a href="#" class="text-info font-weight-bold">Back</a>
+        <a href="register-user-choose.php" class="text-info font-weight-bold">Back</a>
       </div>
     </div>
   </div>
