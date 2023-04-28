@@ -28,12 +28,12 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="contactus.php">
           <i class="fas fa-phone-alt"></i> Contact Us
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="aboutus.php">
           <i class="fas fa-info-circle"></i> About Us
         </a>
       </li>
