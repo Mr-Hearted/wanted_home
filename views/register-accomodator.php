@@ -75,13 +75,25 @@
             <label for="address">Location: </label>
             <input type="text" class="form-control" name="address" id="address" placeholder="Address" required>
           </div>
-          <button type="submit" class="btn btn-primary">Register</button>
+          <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="terms" required>
+              <label class="form-check-label" for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submit-btn" disabled>Register</button>
         </form>
         <a href="register-user-choose.php" class="text-info font-weight-bold">Back</a>
       </div>
     </div>
   </div>
 </section>
+<script>
+  document.getElementById("terms").addEventListener("change", function() {
+    document.getElementById("submit-btn").disabled = !this.checked;
+  });
+</script>
+
 <footer></footer>
 
 <!-- Bootstrap JS and jQuery -->
