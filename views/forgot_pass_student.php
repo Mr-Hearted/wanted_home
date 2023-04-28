@@ -39,24 +39,31 @@
   </div>
 </nav>
 
-	<h2>Reset Password</h2>
-	<form action="../php/forgot-pass-stu-process.php" method="post">
-		<div>
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required>
-		</div>
-		<div>
-			<label for="password">New Password:</label>
-			<input type="password" id="password" name="password" required>
-		</div>
-		<div>
-			<label for="confirm_password">Confirm Password:</label>
-			<input type="password" id="confirm_password" name="confirm_password" required>
-		</div>
-		<div>
-			<input type="submit" value="Reset Password">
-		</div>
-	</form>
+<section class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="mb-4">Reset Password</h2>
+      <form action="../php/forgot-pass-stu-process.php" method="post">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="password">New Password:</label>
+          <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Confirm Password:</label>
+          <input type="password" id="confirm_password" name="confirm_password" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary"><i class="fas fa-key"></i> Reset Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
 	<footer></footer>
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
