@@ -70,7 +70,7 @@
           </div>
           <button type="submit" class="btn btn-info"><i class="fas fa-user-plus"></i> Register</button>
         </form>
-        <a href="#" class="text-info font-weight-bold mt-2"><i class="fas fa-chevron-left"></i> Back</a>
+        <a href="register-user-choose.php" class="text-info font-weight-bold mt-2"><i class="fas fa-chevron-left"></i> Back</a>
       </div>
     </div>
   </div>
