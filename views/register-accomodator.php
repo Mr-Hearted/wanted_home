@@ -17,27 +17,30 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffc5a5;">
+
+<nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#">
-  	<img src="../images/home-logo.jpg" alt="Home Logo" class="img-fluid" style="width:80px; height:80px; margin:70px">
+    <img src="../images/home-logo.jpg" alt="Home Logo" class="img-thumbnail" style="width: 80px; height: 80px; margin-left: 30px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-phone-alt"></i> Contact Us
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#">
+          <i class="fas fa-info-circle"></i> About Us
+        </a>
       </li>
     </ul>
   </div>
 </nav>
+
 <section style="margin-top: 20px;">
   <div class="container">
     <div class="row justify-content-center">
