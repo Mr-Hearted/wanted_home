@@ -68,13 +68,22 @@
             <label for="confirm_password"><i class="fas fa-lock"></i> Confirm Password:</label>
             <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
           </div>
-          <button type="submit" class="btn btn-info"><i class="fas fa-user-plus"></i> Register</button>
+          <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="terms" required>
+              <label class="form-check-label" for="terms">I agree to the <a href="term_condition.php">terms and conditions</a>.</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-btn" disabled><i class="fas fa-user-plus"></i>Register</button>
         </form>
         <a href="register-user-choose.php" class="text-info font-weight-bold mt-2"><i class="fas fa-chevron-left"></i> Back</a>
       </div>
     </div>
   </div>
 </section>
+<script>
+  document.getElementById("terms").addEventListener("change", function() {
+    document.getElementById("submit-btn").disabled = !this.checked;
+  });
+</script>
 	
 	<footer></footer>
 	<!-- Bootstrap JS and jQuery -->
