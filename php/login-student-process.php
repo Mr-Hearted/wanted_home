@@ -74,7 +74,7 @@
 	                    $email_err = "No account found with that username.";
 	                }
 	            } else{
-	                echo "Oops! Something went wrong. Please try again later.";
+	                header("location: ../views/404.php");
 	            }
 	
 	            // Close statement
