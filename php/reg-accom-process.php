@@ -115,12 +115,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     // Redirect to login page
                     header("location: ../views/login-accom.php");
                 } else{
-                    echo "<p>Oops! Something went wrong. Please try again later.</p>";
+                    echo "Oops! Something went wrong. Please try again later.";
                 }
 
                 // Close statement
                 mysqli_stmt_close($stmt);
             }
+        }else {
+            echo "There are errors in your form. Please check and try again.";
         }
 
         // Close connection

@@ -1,5 +1,12 @@
 <?php
+// Initialize the session
 session_start();
+
+// Check if the user is already logged in, if yes then redirect them to homepage
+if(isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] === true){
+    header("location: homepage.php");
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +14,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login choose</title>
+    <title>Register Chooser</title>
     <style>
     body {
       background-image: url("../images/bg-image.jpg");
@@ -23,7 +30,7 @@ session_start();
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="../index.php">
     <img src="../images/home-logo.jpg" alt="Home Logo" class="img-thumbnail" style="width: 80px; height: 80px; margin-left: 30px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,10 +1,20 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is already logged in, if yes then redirect them to homepage
+if(isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] === true){
+    header("location: homepage.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accommodator Register</title>
 	<style>
     body {
       background-image: url("../images/bg-image.jpg");
@@ -19,7 +29,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="../index.php">
     <img src="../images/home-logo.jpg" alt="Home Logo" class="img-thumbnail" style="width: 80px; height: 80px; margin-left: 30px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,7 +88,7 @@
           <div class="form-group">
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="terms" required>
-              <label class="form-check-label" for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
+              <label class="form-check-label" for="terms">I agree to the <a href="term_condition.php?from=register-accomodator.php">Terms and Conditions</a>.</label>
             </div>
           </div>
           <button type="submit" class="btn btn-primary" id="submit-btn" disabled>Register</button>

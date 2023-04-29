@@ -93,6 +93,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Close statement
             mysqli_stmt_close($stmt);
         }
+    }else {
+        echo "There are errors in your form. Please check and try again.";
     }
 
     // Close connection
